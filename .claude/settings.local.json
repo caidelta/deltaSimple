@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(pip install *)",
+      "Bash(python *)",
+      "Bash(python3 *)",
+      "Bash(SNAPTRADE_CLIENT_ID=myclientid123 SNAPTRADE_CONSUMER_KEY=myconsumerkey456 SNAPTRADE_USER_ID=cai DISCORD_WEBHOOK_URL=https://discord.com/api/webhooks/999/secrettoken POLL_INTERVAL_SECONDS=30 PRICE_ALERT_THRESHOLD_PCT=5.0 ENV=development python3 *)"
+    ]
+  }
+}
