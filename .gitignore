@@ -24,7 +24,7 @@ build/
 .venv/
 venv/
 env/
-CLAUDE(1).md
+
 
 # uv
 .uv/
@@ -41,3 +41,6 @@ Thumbs.db
 .vscode/
 .idea/
 *.swp
+
+# CLAUDE
+CLAUDE(1).md
