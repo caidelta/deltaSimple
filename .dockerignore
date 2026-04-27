@@ -1,46 +1,33 @@
-# Secrets
+# Secrets — never bake into the image
 .env
 *.env
 .env.*
-!.env.example
 
-# Database
+# Database — mounted as a volume at runtime
 *.db
 *.sqlite
 *.sqlite3
 
-# Python
+# Python noise
 __pycache__/
 *.py[cod]
 *.pyo
 .pytest_cache/
 .mypy_cache/
-dist/
-build/
-*.egg-info/
-.eggs/
 
-# Virtual environments
+# Dev tooling
 .venv/
 venv/
 env/
-
-
-# uv
 .uv/
+
+# Tests
+tests/
 
 # Logs
 *.log
-logs/
 
-# OS
+# OS / IDE
 .DS_Store
-Thumbs.db
-
-# IDE
 .vscode/
 .idea/
-*.swp
-
-# CLAUDE
-CLAUDE (1).md

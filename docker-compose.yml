@@ -1,0 +1,8 @@
+services:
+  tracker:
+    build: .
+    env_file: .env
+    volumes:
+      # Persist the SQLite database across container restarts
+      - ./tracker.db:/app/tracker.db
+    restart: unless-stopped

@@ -1,0 +1,27 @@
+services:
+  - type: worker
+    name: deltaSimple
+    runtime: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python tracker.py
+    envVars:
+      - key: SNAPTRADE_CLIENT_ID
+        sync: false
+      - key: SNAPTRADE_CONSUMER_KEY
+        sync: false
+      - key: SNAPTRADE_USER_ID
+        sync: false
+      - key: SNAPTRADE_USER_SECRET
+        sync: false
+      - key: DISCORD_WEBHOOK_URL
+        sync: false
+      - key: TELEGRAM_BOT_TOKEN
+        sync: false
+      - key: TELEGRAM_CHAT_ID
+        sync: false
+      - key: POLL_INTERVAL_SECONDS
+        value: "30"
+      - key: PRICE_ALERT_THRESHOLD_PCT
+        value: "5.0"
+      - key: ENV
+        value: production
